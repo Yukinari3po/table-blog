@@ -19,3 +19,13 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - tags
+  layout: tags
+  permalinks:
+    tag: '/tag/:name/'
