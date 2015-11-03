@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="p-article-list c-flex-container">
+
+  {% for post in site.posts %}
+    <a class="p-al__item c-fe--col12--landscape c-fe--col4 c-fe--col6--tablet u-hover--grow u-transition--ease u-color--text-light" href="{{ post.url | prepend: site.baseurl }}">
+      <article class="p-ci--white u-box-shadow u-ol--white" >
+        <header class="p-ali__header c-thumbnail" {% if post.eyecatch %} style="background-image: url({{ post.eyecatch | prepend: site.baseurl }});"{% endif %}>
+          <div class="p-ali__hd__container">
+            <time class="c-date" datetime="{{ post.date }}" pubdate>
+              <span class="c-dt__year">{{ post.date | date: "%Y" }}</span>
+              <span class="c-dt__day">{{ post.date | date: "%-m/%-d" }}</span>
+            </time>
+
+            <h2 class="p-ali__heading">
+              {{ post.title }}
+            </h2>
+          </div>
+        </header>
+
+        {% if post.copy %}
+          <div class="p-ali__container">
+            {{ post.copy | strip_newlines | truncate: 320 }}
+          </div>
+        {% endif %}
+      </article>
+    </a>
+  {% endfor %}
+
+</div>
