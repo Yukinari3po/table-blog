@@ -1,0 +1,58 @@
+@import "../../0_foundation/mixins";
+
+// ここの実装むずかしい。　とりあえずはこうするが、可能ならばJavascriptで
+// タイミングを制御したほうが良いだろう。
+
+// Slide Down animation
+
+@-webkit-keyframes c-fln__appearing {
+  0% { @include transform(translateX(120%)); }
+  100% { @include transform(translateX(0)); }
+}
+
+@-webkit-keyframes c-fln__waiting {
+  0% { @include transform(translateX(0)); }
+  100% { @include transform(translateX(0)); }
+}
+
+@-webkit-keyframes c-fln__disappearing {
+  0% { @include transform(translateX(0)); }
+  100% { @include transform(translateX(120%)); }
+}
+
+.c-flash-notice {
+  position: fixed;
+  z-index: 10;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 280px;
+  color: white;
+  text-shadow: 0px 0px 2px #88421e; //PANTONE 7517 C
+  padding: 1em;
+  margin: 0.5em 1em;
+  right: 0%;
+  top: 48px;
+  @include transform(translateX(120%));
+}
+
+.c-flash-notice--success {
+  @extend .c-flash-notice;
+  background-color: #21d081; // PANTONE 7479 C 
+}
+
+.c-flash-notice--error {
+  @extend .c-flash-notice;
+  background-color: #fa405a; // PANTONE 1787 C
+}
+
+.c-flash-notice--animate-appear {
+  -webkit-animation: c-fln__appearing 0.5s ease 0s 1,
+                     c-fln__waiting 2s linear 0.5s 1;
+}
+
+.c-flash-notice--animate-appear-and-disappear {
+  -webkit-animation: c-fln__appearing 0.5s ease 0s 1,
+                     c-fln__waiting 3s linear 0.5s 1,
+                     c-fln__disappearing 0.5s ease 3.5s 1;
+}

@@ -1,0 +1,44 @@
+@import "../../0_foundation/variables";
+@import "../../0_foundation/flex";
+
+.h-inline-items {
+	@include align-items(center);
+}
+
+.c-inline-items {
+	@extend .h-inline-items;
+	@include flex-row;
+}
+
+.c-inline-items--nowrap {
+	@extend .h-inline-items;
+	@include flex-row-nowrap;
+
+	.c-ii__heading {
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+}
+
+.c-ii--justify-right {
+	@include justify-content(flex-end);
+}
+
+.c-inline-items__icon {
+	height: 100%;
+	width: auto;
+}
+
+.c-ii__heading {
+	font-size: $common-icon-width * 0.4;
+	line-height: 1em;
+}
+
+.c-ii__fluid {
+	@include flex(1,0,auto);
+}
+
+.c-ii__heading--small {
+  font-size: $common-icon-width * 0.33;
+}

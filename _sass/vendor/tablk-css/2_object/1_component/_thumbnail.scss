@@ -1,0 +1,68 @@
+.c-thumbnail {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c-thumbnail--diamond {
+  @extend .c-thumbnail;
+
+}
+
+.c-thumbnail--translucent {
+  @extend .c-thumbnail;
+  @include filter(opacity(0.75));
+}
+
+.c-thumbnail--radius {
+  @extend .c-thumbnail;
+  border-radius: 5px;
+}
+
+.c-thumbnail--circle {
+  @extend .c-thumbnail;
+  border-radius: 50%;
+  position: relative;
+}
+
+.c-thumbnail--shadow {
+  @include box-shadow(0 0 3px 0px rgba(0,0,0,0.2) inset);
+  &:before, &:after {
+    @include box-shadow(0 0 3px 0px rgba(0,0,0,0.2));
+  }
+}
+
+@-webkit-keyframes c-thm--bounce {
+  0% { @include transform(scale(1)); }
+  33% { @include transform(scale3d(0.95, 1.05, 1)); }
+  66% { @include transform(scale3d(1.05, 0.95, 1)); }
+  100% { @include transform(scale(1)); }
+}
+
+.c-thumbnail--large {
+  width: 250px;
+  height: 250px;
+}
+
+.c-thumbnail--middle {
+  width: 160px;
+  height: 160px;
+}
+
+.c-thumbnail--small {
+  width: 50px;
+  height: 50px;
+}
+
+.c-thumbnail--circle {
+  &.animate-appear {
+    
+  }
+}
+
+.c-thm--hover-receiver:hover .c-thumbnail--translucent.animate-hover {
+  @include filter(none);
+}
+
+.c-thm--hover-receiver:hover .c-thumbnail--circle.animate-hover {
+  @include animation(c-thm--bounce 0.3s ease 0s 1);
+}

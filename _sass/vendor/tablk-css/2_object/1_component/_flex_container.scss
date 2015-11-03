@@ -1,0 +1,256 @@
+.h-fc {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.c-flex-container {
+    @extend .h-fc;
+    @include flex-row;
+}
+
+.c-flex-container--nowrap {
+    @extend .h-fc;
+    @include flex-row-nowrap;
+}
+
+.c-flex-container--vertical {
+    @extend .h-fc;
+    @include flex-column;
+}
+
+img.block {
+    display: block;
+
+    &.centering {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.c-flex-element {
+    @include flex(0, 0, auto);
+    @include flex-column-nowrap;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 1em;
+}
+
+.c-fe--grow {
+    @extend .c-flex-element;
+    @include flex-grow(1);
+}
+
+.c-fe--shrink {
+    @extend .c-flex-element;
+    @include flex-shrink(1);
+}
+
+.h-fe__img {
+  height: auto;
+}
+
+.c-fe__img {
+  @extend .h-fe__img;
+  width: 100%;
+}
+
+$width-col1: 100% / 12;
+
+.c-fe--col1 {
+    @extend .c-flex-element;
+    @include flex-basis($width-col1);
+}
+
+.c-fe--col2 {
+    @extend .c-flex-element;
+    @include flex-basis($width-col1 * 2);
+}
+
+.c-fe--col3 {
+    @extend .c-flex-element;
+    @include flex-basis($width-col1 * 3);
+}
+
+.c-fe--col4 {
+    @extend .c-flex-element;
+    @include flex-basis($width-col1 * 4);
+}
+
+.c-fe--col5 {
+    @extend .c-flex-element;
+    @include flex-basis($width-col1 * 5);
+}
+
+.c-fe--col6 {
+    @extend .c-flex-element;
+    @include flex-basis($width-col1 * 6);
+}
+
+.c-fe--col7 {
+    @extend .c-flex-element;
+    @include flex-basis($width-col1 * 7);
+}
+
+.c-fe--col8 {
+    @extend .c-flex-element;
+    @include flex-basis($width-col1 * 8);
+}
+
+.c-fe--col9 {
+    @extend .c-flex-element;
+    @include flex-basis($width-col1 * 9);
+}
+
+.c-fe--col10 {
+    @extend .c-flex-element;
+    @include flex-basis($width-col1 * 10);
+}
+
+.c-fe--col11 {
+    @extend .c-flex-element;
+    @include flex-basis($width-col1 * 11);
+}
+
+.c-fe--col12,
+.c-fe--fluid {
+    @extend .c-flex-element;
+    @include flex(0, 0, 100%);
+}
+
+@media (min-width: 992px) {
+    .h-fc{
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 991px) {
+    .h-fc {
+        max-width: 750px;
+    }
+
+    .c-fe--col1--tablet {
+        @include flex-basis($width-col1);
+    }
+
+    .c-fe--col2--tablet {
+        @include flex-basis($width-col1 * 2);
+    }
+
+    .c-fe--col3--tablet {
+        @include flex-basis($width-col1 * 3);
+    }
+
+    .c-fe--col4--tablet {
+        @include flex-basis($width-col1 * 4);
+    }
+
+    .c-fe--col5--tablet {
+        @include flex-basis($width-col1 * 5);
+    }
+
+    .c-fe--col6--tablet {
+        @include flex-basis($width-col1 * 6);
+    }
+
+    .c-fe--col7--tablet {
+        @include flex-basis($width-col1 * 7);
+    }
+
+    .c-fe--col8--tablet {
+        @include flex-basis($width-col1 * 8);
+    }
+
+    .c-fe--col9--tablet {
+        @include flex-basis($width-col1 * 9);
+    }
+
+    .c-fe--col10--tablet {
+        @include flex-basis($width-col1 * 10);
+    }
+
+    .c-fe--col11--tablet {
+        @include flex-basis($width-col1 * 11);
+    }
+
+    .c-fe--col12--tablet,
+    .c-fe--fluid--tablet {
+        @include flex(0, 0, 100%);
+    }
+}
+
+@media (max-width: 767px) {
+    .h-fc {
+        max-width: 460px;
+    }
+
+    .c-fe__img--small-landscape {
+      width: 100%;
+      padding: 1em 10%;
+    }
+
+    .c-fe--col1--landscape {
+        @include flex-basis($width-col1);
+    }
+
+    .c-fe--col2--landscape {
+        @include flex-basis($width-col1 * 2);
+    }
+
+    .c-fe--col3--landscape {
+        @include flex-basis($width-col1 * 3);
+    }
+
+    .c-fe--col4--landscape {
+        @include flex-basis($width-col1 * 4);
+    }
+
+    .c-fe--col5--landscape {
+        @include flex-basis($width-col1 * 5);
+    }
+
+    .c-fe--col6--landscape {
+        @include flex-basis($width-col1 * 6);
+    }
+
+    .c-fe--col7--landscape {
+        @include flex-basis($width-col1 * 7);
+    }
+
+    .c-fe--col8--landscape {
+        @include flex-basis($width-col1 * 8);
+    }
+
+    .c-fe--col9--landscape {
+        @include flex-basis($width-col1 * 9);
+    }
+
+    .c-fe--col10--landscape {
+        @include flex-basis($width-col1 * 10);
+    }
+
+    .c-fe--col11--landscape {
+        @include flex-basis($width-col1 * 11);
+    }
+
+    .c-fe--col12--landscape,
+    .c-fe--fluid--landscape {
+        @include flex(0, 0, 100%);
+    }
+}
+
+@media (max-width: 478px) {
+    .h-fc {
+        max-width: 320px;
+    }
+
+    .c-fe--fluid--portrait {
+        @include flex-basis(100%);
+    }
+
+    .c-fe__img--small--landscape {
+      width: 100%;
+      padding: 1em 10%;
+    }
+}

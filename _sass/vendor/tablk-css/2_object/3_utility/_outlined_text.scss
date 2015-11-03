@@ -1,0 +1,9 @@
+@import "../../0_foundation/mixins";
+
+.u-ol--white {
+  @include outlined-text(white);
+}
+
+.u-ol--gray {
+  @include outlined-text(#666);
+}

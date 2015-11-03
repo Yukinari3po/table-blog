@@ -1,0 +1,27 @@
+@import "../../0_foundation/variables";
+
+.u-padding--ci--l { // padding Left Common Icon Width
+	padding-left: $common-icon-width;
+}
+
+.u-padding--ci--r { // padding Left Common Icon Width
+	padding-right: $common-icon-width;
+}
+
+.u-padding--ci--lr {
+	@extend .u-padding--ci--l;
+	@extend .u-padding--ci--r;
+}
+
+.u-padding--cs--l { 
+	padding-left: $common-space-width;
+}
+
+.u-padding--cs--r { 
+	padding-right: $common-space-width;
+}
+
+.u-padding--cs--lr {
+	@extend .u-padding--cs--l;
+	@extend .u-padding--cs--r;
+}

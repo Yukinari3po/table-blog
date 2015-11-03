@@ -1,0 +1,86 @@
+/* Responsive Margins
+================================================== */
+
+@mixin responsive-side-margin {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: 768px) {
+    & {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+}
+
+/* # Transform
+================================================== */
+@mixin transform($property...) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+@mixin transform-origin($property) {
+    -webkit-transform-origin: $property;
+    -ms-transform-origin: $property;
+    transform-origin: $property;
+}
+
+/* # Animation
+================================================== */
+@mixin animation($property...) {
+    -webkit-animation: $property;
+    -moz-animation: $property;
+    -ms-animation: $property;
+    -o-animation: $property;
+    animation: $property;
+}
+
+/*  Outlined Text
+================================================== */
+
+@mixin outlined-text($color) {
+    text-shadow: 1px  1px 0px $color,
+                 1px -1px 0px $color,
+                -1px  1px 0px $color,
+                -1px -1px 0px $color,
+
+                 1px  0px 0px $color,
+                -1px  0px 0px $color,
+                 0px  1px 0px $color,
+                 0px -1px 0px $color;
+}
+
+/*  Box Shadow
+================================================== */
+
+@mixin box-shadow($property...) {
+    -webkit-box-shadow: $property;
+    -moz-box-shadow: $property;
+    box-shadow: $property;
+}
+
+/* # Transition
+================================================== */
+@mixin transition($property...) {
+    -webkit-transition: $property;
+       -moz-transition: $property;
+            transition: $property;
+}
+
+@mixin transition-transform($property...) {
+    -webkit-transition: -webkit-transform $property;
+       -moz-transition: -moz-transform $property;
+            transition: transform $property;
+}
+
+/* # Filter
+================================================== */
+@mixin filter($property...) {
+    -webkit-filter: $property;
+       -moz-filter: $property;
+        -ms-filter: $property;
+         -o-filter: $property;
+            filter: $property;
+}

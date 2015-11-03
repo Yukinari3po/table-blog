@@ -1,0 +1,15 @@
+.c-popup {
+  position: absolute;
+  width: 27em;
+  display: none;
+  opacity: 0;
+  padding: 0.5em 1em;
+}
+
+.c-pop--hover-receiver {
+  position: relative;
+}
+.c-pop--hover-receiver:hover .c-popup {
+  display: inline-block;
+  opacity: 1;
+}

@@ -1,0 +1,7 @@
+@import "../../0_foundation/flex";
+
+.c-centering-container {
+	@include flex-row-nowrap;
+	@include justify-content(center);
+	@include align-items(center);
+}

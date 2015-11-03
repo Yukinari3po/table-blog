@@ -1,0 +1,11 @@
+.u-scrollable-content--vertical {
+	overflow-x: hidden;
+	overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.u-scrollable-content--horizontal {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}

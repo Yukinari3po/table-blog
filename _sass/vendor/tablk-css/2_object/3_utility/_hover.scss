@@ -1,0 +1,30 @@
+.u-hover--grow:hover {
+  @include transform(scale(1.1));
+  z-index: 1;
+}
+
+@-webkit-keyframes u-hvr--bounce {
+  0% { @include transform(scale(1)); }
+  33% { @include transform(scale(1.2)); }
+  100% { @include transform(scale(1)); }
+}
+
+.u-hover--bounce:hover {
+  @include animation(u-hvr--bounce 0.3s ease 0s 1);
+}
+
+.u-hover--bright:hover {
+  @include box-shadow(0 0 5px 0px #0085cf); // PANTONE Process Blue C
+}
+
+.u-hover--hop:hover {
+  -webkit-animation: u-hvr--bounce 0.3s ease 0s 1;
+}
+
+.u-hover--colorize {
+  @include filter(opacity(0.75));
+}
+
+.u-hover--colorize:hover {
+  @include filter(none);
+}

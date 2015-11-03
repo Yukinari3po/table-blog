@@ -1,0 +1,80 @@
+/* # flex
+================================================== */
+
+.h-flex{
+    display:-webkit-flex;
+    display:        flex; 
+}
+
+@mixin flex-row {
+    @extend .h-flex;
+
+    -webkit-flex-flow: row wrap;    
+            flex-flow: row wrap;
+}
+
+@mixin flex-row-nowrap {
+    @extend .h-flex;
+
+    -webkit-flex-flow: row nowrap;    
+            flex-flow: row nowrap;
+}
+
+@mixin flex-column {
+    @extend .h-flex;
+
+    -webkit-flex-flow: column wrap;    
+            flex-flow: column wrap;
+}
+
+@mixin flex-column-nowrap {
+    @extend .h-flex;
+
+    -webkit-flex-flow: column nowrap;    
+            flex-flow: column nowrap;
+}
+
+@mixin flex($grow,$shrink,$basis) {
+    -webkit-flex: $grow $shrink $basis;
+            flex: $grow $shrink $basis;
+}
+
+@mixin flex-grow($grow) {
+    -webkit-flex-grow: $grow;
+            flex-grow: $grow;
+}
+
+@mixin flex-shrink($shrink) {
+    -webkit-flex-shrink: $shrink;
+            flex-shrink: $shrink;
+}
+
+@mixin flex-basis($basis) {
+    -webkit-flex-basis: $basis;
+            flex-basis: $basis;
+}
+
+@mixin justify-content($property) {
+    -webkit-justify-content: $property;
+            justify-content: $property;
+}
+
+@mixin justify-self($property) {
+    -webkit-justify-self: $property;
+            justify-self: $property;
+}
+
+@mixin align-content($property) {
+    -webkit-align-content: $property;
+            align-content: $property;
+}
+
+@mixin align-items($property) {
+    -webkit-align-items: $property;
+            align-items: $property;
+}
+
+@mixin align-self($property) {
+    -webkit-align-self: $property;
+            align-self: $property;
+}

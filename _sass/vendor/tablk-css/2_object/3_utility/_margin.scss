@@ -1,0 +1,36 @@
+@import "../../0_foundation/variables";
+
+.u-margin--cs--l {
+	margin-left: $common-space-width;
+}
+
+.u-margin--cs--r {
+	margin-right: $common-space-width;
+}
+
+.u-margin--cs--lr {
+	@extend .u-margin--cs--l;
+	@extend .u-margin--cs--r;
+}
+
+.u-margin--auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.u-margin--ci--l {
+	margin-left: $common-icon-width;
+}
+
+.u-margin--ci--r {
+	margin-right: $common-icon-width;
+}
+
+.u-margin--ci--lr {
+	@extend .u-margin--ci--l;
+	@extend .u-margin--ci--r;
+}
+
+.u-margin--t {
+	margin-top: 2em;
+}
