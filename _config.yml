@@ -11,13 +11,4 @@ twitter_username: Tablk_Official
 markdown: kramdown
 
 gems:
-  - jekyll-archives
-
-jekyll-archives:
-  enabled:
-    - tags
-    - categories
-  layout: 'archive'
-  permalinks:
-    tag: '/tag/:name/'
-    category: '/category/:name/'
+  - jekyll-sitemap
