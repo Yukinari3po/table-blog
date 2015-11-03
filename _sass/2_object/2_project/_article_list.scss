@@ -37,4 +37,9 @@ $ali__heading-line-height: 1.79em;
 .p-ali__container {
   padding: 10px;
   line-height: $ali__heading-line-height;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }

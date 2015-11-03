@@ -5,6 +5,8 @@ date:   2015-11-01
 categories: how-to-use
 ---
 
+![NPCとして話す](/assets/how-to-use/post-as-npcs/01.png)
+
 NPCの名前を書いてから”「”をつけて入力すると、  
 NPCの発言になります。  
 同じ名前のNPCがセッションに用意されている場合には、  
