@@ -1,0 +1,16 @@
+<article class="p-ci--white u-box-shadow u-ol--white" >
+  <header class="p-ali__header c-thumbnail" {% if post.eyecatch %} style="background-image: url({{ post.eyecatch | prepend: site.baseurl }});"{% endif %}>
+    <div class="p-ali__hd__container">
+
+      <h2 class="p-ali__heading">
+        {{ post.title }}
+      </h2>
+    </div>
+  </header>
+
+  {% if post.copy %}
+    <div class="p-ali__container">
+      {{ post.copy | strip_newlines | truncate: 320 }}
+    </div>
+  {% endif %}
+</article>

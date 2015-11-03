@@ -2,7 +2,7 @@
 layout: post
 title: 自分のキャラクターとして会話する
 date:   2015-11-01
-categories: how-to-use session-page
+categories: how-to-use
 ---
 
 ### プレイヤーキャラクターとして話す

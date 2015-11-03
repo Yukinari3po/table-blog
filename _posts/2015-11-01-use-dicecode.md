@@ -2,7 +2,7 @@
 layout: post
 title: ダイス(サイコロ)のつかいかた
 date:   2015-11-01
-categories: how-to-use session-page
+categories: how-to-use
 tags: GM Player
 ---
 
