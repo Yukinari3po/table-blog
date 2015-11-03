@@ -1,0 +1,41 @@
+@import "../../0_foundation/flex";
+
+.u-justify--end {
+    @include justify-content(flex-end);
+}
+
+.u-justify--around {
+    @include justify-content(space-around);
+}
+
+.u-justify--between {
+    @include justify-content(space-between);
+}
+
+.u-justify--center {
+    @include justify-content(center);
+}
+
+.u-justifys--end {
+  @include justify-self(flex-end);
+}
+
+.u-alignc--center {
+    @include align-content(center);
+}
+
+.u-aligni--center {
+    @include align-items(center);
+}
+
+.u-aligni--start {
+    @include align-items(flex-start);
+}
+
+.u-aligni--end {
+    @include align-items(flex-end);
+}
+
+.u-aligns--center {
+    @include align-self(center);
+}

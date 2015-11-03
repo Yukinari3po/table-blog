@@ -1,0 +1,40 @@
+@import "../../0_foundation/variables";
+
+.u-bgc--panel {
+	background-color: $panel-bg;
+}
+
+.u-bgc--darkblue {
+	background-color: #00578d;
+}
+
+.u-bgc--dark {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.u-bgc--white {
+	background-color: rgb(255, 255, 255);
+}
+
+.u-bgc--gray {
+  background-color: #dfe5e6; // PANTONE 7541 C
+}
+
+.u-bgs--cover {
+	background-size: cover;
+}
+
+// card
+.u-bgc--card-item {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+// session-summary
+.u-bgc--ss__header {
+	background-color: rgb(240, 240, 245);
+}
+
+// themes
+.u-bgc--t-red {
+	background-color: rgba(236, 93, 87, 1);
+}

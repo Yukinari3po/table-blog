@@ -1,0 +1,89 @@
+@import "../../0_foundation/mixins";
+
+.c-avatar {
+  position: static;
+}
+
+.c-avatar--radius {
+  @extend .c-avatar;
+  border-radius: 5px;
+}
+
+.c-avatar--circle {
+  @extend .c-avatar;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+
+  &:before, &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:after {
+    background-color: orange;
+    @include transform(scale(0));
+    @include transition(background-color 0.2s ease-out 0.1s, -webkit-transform 0.2s ease 0.1s);
+  }
+
+  &:before {
+    background-color: white;
+    @include transform(scale(0.8));
+    @include transition(background-color 0.3s ease-in 0, -webkit-transform 0.2s ease 0);
+  }
+
+  img {
+    z-index: 1;
+    position: relative;
+  }
+}
+
+.c-avatar--shadow {
+  @include box-shadow(0 0 3px 0px rgba(0,0,0,0.2) inset);
+  &:before, &:after {
+    @include box-shadow(0 0 3px 0px rgba(0,0,0,0.2));
+  }
+}
+
+@-webkit-keyframes c-avt__anm1 {
+  0% { @include transform(scale(0)); }
+  100% { @include transform(scale(1)); }
+}
+
+.c-avatar--large {
+  width: 250px;
+  height: 250px;
+}
+
+.c-avatar--middle {
+  width: 160px;
+  height: 160px;
+}
+
+.c-avatar--small {
+  width: 120px;
+  height: 120px;
+}
+
+.c-avatar--circle {
+  &.animate-appear {
+    -webkit-animation: c-avt__anm1 0.5s ease 0s 1;
+  }
+}
+
+.c-avr--hover-receiver:hover .c-avatar--circle.animate-hover:before {
+  background-color: orange;
+  @include transform(scale(1));
+}
+
+.c-avr--hover-receiver:hover .c-avatar--circle.animate-hover:after {
+  background-color: rgba(255, 255, 255, 1);
+  @include transform(scale(0.8));
+}

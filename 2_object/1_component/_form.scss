@@ -1,0 +1,86 @@
+@import "../../0_foundation/mixins";
+@import "../../0_foundation/flex";
+
+.h-form-base {
+  padding: 0.25em;
+  font-size: 1.3em;
+  color: #666;
+  @include transition(background 0.2s ease 0,
+                      box-shadow 0.2s ease 0);
+}
+
+.c-form {
+  @extend .h-form-base;
+  display: block;
+  width: 100%;
+  background: transparent;
+
+  & + .c-form {
+    margin-top: 0.5em;
+  }
+}
+
+.c-form-group {
+  & + .c-form-group { 
+    margin-top: 1em;
+  }
+}
+
+.c-form--underlined {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd; // PANTONE 279 C
+}
+
+.c-form--border-radius {
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.c-form--focus-blue {
+  &:focus {
+    background: #d1ebff; // PANTONE 290 C
+    @include box-shadow(0 0 3px 1px #d1ebff);
+  }
+}
+
+.c-inline-form {
+  @include flex-row;
+}
+
+.c-inline-form--sparse {
+  @extend .c-inline-form;
+  margin-bottom: 1em;
+}
+
+.c-fm__label {
+  margin-bottom: 0.5em;
+  line-height: 1em;
+}
+
+.c-if__label {
+  @extend .c-fm__label;
+  @include flex(0, 0, 300px);
+}
+
+.c-fm__label--large {
+  font-size: 1.2em;
+}
+
+.c-fm__label--gray {
+  @extend .c-fm__label;
+  color: gray; 
+}
+
+.c-fm__label--bold {
+  @extend .c-fm__label;
+  font-weight: bold;
+}
+
+
+.c-fm__label--blue {
+  color: #0085cf; // PANTONE Process Blue C
+}
+
+.c-if__form {
+  @include flex(1, 0, 300px);
+}

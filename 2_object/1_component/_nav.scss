@@ -1,0 +1,11 @@
+@import "../../0_foundation/flex";
+
+.c-nav--inline {
+    @include flex-row;
+    @include justify-content(center);
+}
+
+.c-nav__item--round {
+    padding: 0;
+    border-radius: 50%;
+}

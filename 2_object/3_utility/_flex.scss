@@ -1,0 +1,17 @@
+@import "../../0_foundation/flex";
+
+.u-flex--row {
+	@include flex-row;
+}
+
+.u-flex--row--nowrap {
+  @include flex-row-nowrap;
+}
+
+.u-flex--column {
+	@include flex-column;
+}
+
+.u-flex--column--nowrap {
+  @include flex-column-nowrap;
+}

@@ -1,0 +1,79 @@
+/* # Colors
+================================================== */
+
+$theme:             rgba(78,178,252,1);
+$theme-translucent: rgba(78,178,252,0.8);
+
+$based:             #ffffff;
+$based-button:      rgba(180,180,180,1);
+$based-darken:      rgba(0,0,0,0.5);
+$based-text:        rgba(20,20,20,1);
+
+$assorted:          #AE88D0;
+$assorted-light:    #191818;
+$assorted-dark:     rgb(75, 187, 252) * 0.8;     
+
+$accent:            #DE6A10;
+$accent-light:      #FF6A3F;
+
+$panel-bg: $based;
+
+$mp__head-description--bgc: $panel-bg;
+
+/* # Layout Variables
+================================================== */
+$navbar-width: 200px;
+
+$common-space-width: 12px;
+$common-icon-width: 48px;
+
+$main-width: 450px;
+
+$user-icon-size: 64px;
+
+$header-height: $common-icon-width;
+$header-logo-height: 20px;
+
+$footer-height: 64px;
+
+$manu-button-size: $header-height;
+
+$manu-items-font-size: 12pt;
+$manu-descriptions-font-size: 8pt;
+
+$tablet-landscape: 960px;
+$tablet-portrait: 768px;
+$mobile-landscape: 480px;
+$mobile-portrait: 320px;
+
+$normal-speed: 0.4s;
+
+$navbarItems-sideMargin: 20px;
+$navbarItems-TopAndBottomMargin: 10px;
+
+/* # Rounded corner
+================================================== */
+
+@mixin rounded-corner {
+    border-radius: 5px;
+}
+
+/* # Link Color
+================================================== */
+@mixin link-none-decolate($color) {
+    a:link,a:hover,a:active,a:visited{
+        color: $color;
+        text-decoration: none;
+        text-shadow: none;
+    }
+}
+
+@mixin link-luminous($color,$hover-color) {
+    a:link,a:visited{
+        color: $color;
+    }
+    a:hover,a:active{
+        color: $hover-color;
+        text-shadow: 0px  0px 3px $color;
+    }
+}

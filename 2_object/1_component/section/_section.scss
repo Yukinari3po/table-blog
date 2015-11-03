@@ -1,0 +1,51 @@
+@import "../../../0_foundation/variables";
+@import "../../../0_foundation/mixins";
+@import "../../../0_foundation/flex";
+
+.c-section {
+  @include responsive-side-margin;
+
+  & + .c-section {
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 1px solid #ddd;
+  }
+}
+
+.c-section--2sided {
+  @extend .c-section;
+  @include flex-row;
+
+  > .c-sec__header {
+    min-width: 320px;
+  }
+
+  > .c-sec__content {
+    min-width: 320px;
+  }
+}
+
+.c-sec__header {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.c-sec__description {
+  margin-top: 1em;
+}
+
+.c-sec__heading {
+	font-size: 1.5em;
+  color: #0085cf; // PANTONE Process Blue C
+  line-height: 1.3em;
+}
+
+.c-sec__content {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.c-sec__footer {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}

@@ -1,0 +1,17 @@
+.c-form-notice {
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  margin-top: 1em;
+  padding: 0.3em 1em;
+}
+
+.c-form-notice--error {
+  @extend .c-form-notice;
+  background-color: #fa405a; // PANTONE 1787 C
+}
+
+.c-fnt__list-group {
+  list-style-type: circle;
+  margin-left: 1em;
+}

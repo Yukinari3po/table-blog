@@ -1,0 +1,74 @@
+@import "../../0_foundation/mixins";
+
+// Inspired from Bootstrap
+.c-button {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.5em 1em;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.2em;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  @include transition(box-shadow 0.2s ease 0,
+                      background-color 0.3s ease 0);
+
+  &:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+
+  &:active {
+    @include box-shadow(0 3px 5px rgba(0, 0, 0, .125) inset);
+  }
+}
+
+.c-button--default {
+  @extend .c-button;
+  color: #333;
+  background-color: #fff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #ddd;
+  }
+}
+
+.c-button--border--dark {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.c-button--dark {
+  @extend .c-button;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  &,a{
+    color: #ffffff;
+  }
+}
+
+.c-button--primary {
+  @extend .c-button;
+  background: linear-gradient(to right, rgba(255, 159, 0, 0.5) 0%, rgba(242, 175, 50, 0.5) 100%);  // PANTONE 137 C -> PANTONE 143 C
+  background-color: #ff9f00; // PANTONE 137 C
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0px 0px 2px #88421e; //PANTONE 7517 C
+
+  &:hover {
+    background-color: #e37c00; // PANTONE 138 C
+  }
+}
+
+.c-button--large {
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+}

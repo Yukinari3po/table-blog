@@ -1,0 +1,8 @@
+.c-heading {
+  line-height: 1.5em;
+}
+
+.c-heading--h3 {
+  font-size: 1.2em;
+  @extend .c-heading;
+}
