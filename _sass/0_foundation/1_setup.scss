@@ -1,0 +1,47 @@
+@import "../0_foundation/variables";
+
+body {
+	height: 100vh;
+	background-color: #00578d;
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+  font-size: 10.5pt;
+  color: #333;
+  line-height: 1.79em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-size: 1em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ol,ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+input, select, textarea {
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+}
+
+@media (max-width: 478px) {
+  body {
+    font-size: calc(320px / 28);
+  }
+}
+
+@media (min-width: 479px) and (max-width: 767px) {
+  body {
+    font-size: 12pt;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 12.5pt;
+  }
+}

@@ -1,0 +1,9 @@
+.p-card-item {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.p-ci--white {
+  @extend .p-card-item;
+  background-color: white;
+}

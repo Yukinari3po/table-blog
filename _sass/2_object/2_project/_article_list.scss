@@ -1,0 +1,40 @@
+.p-al__item {
+  font-size: 12px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #3e4545; // PANTONE 446C
+
+  &:hover .p-ali__hd__container {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+.p-ali__header {
+}
+
+.p-ali__hd__container {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  transition: background-color 0.4s ease 0;
+  -webkit-transition: background-color 0.4s ease 0;
+  -moz-transition: background-color 0.4s ease 0;
+  -o-transition: background-color 0.4s ease 0;
+}
+
+$ali__heading-font-size: 1.25em;
+$ali__heading-line-height: 1.79em;
+
+.p-ali__heading {
+  text-align: right;
+  font-size: $ali__heading-font-size;
+  line-height: $ali__heading-line-height;
+  display: block;
+  height: $ali__heading-font-size * 2 + $ali__heading-line-height;
+  font-weight: bold;
+  font-family: serif;
+}
+
+.p-ali__container {
+  padding: 10px;
+  line-height: $ali__heading-line-height;
+}

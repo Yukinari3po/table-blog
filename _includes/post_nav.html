@@ -1,0 +1,24 @@
+<nav class="c-button-group p-post-nav u-flex--row--nowrap">
+    {% if page.next %} 
+      <a href="{{ page.next.url }}" class="c-button--dark p-pn__item">
+        新しい記事へ
+      </a>
+    {% else %}
+      <div class="c-button--dark p-pn__item--disabled">
+      いちばん新しい記事です 
+      </div>
+    {% endif %}
+  </a>
+  <a href="{{ site.baseurl }}/" class="p-pn__item c-button--dark">
+    一覧にもどる
+  </a>
+  {% if page.previous %} 
+    <a href="{{ page.previous.url }}" class="c-button--dark p-pn__item">
+      古い記事へ
+    </a>
+  {% else %}
+    <div class="c-button--dark p-pn__item--disabled">
+    いちばん古い記事です 
+    </div>
+  {% endif %}
+</nav>

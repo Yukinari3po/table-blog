@@ -1,38 +1,53 @@
-<footer class="site-footer">
+<div id="footer" class="u-width--fluid">
+  <footer class="c-flex-container">
+    <h3 class="c-heading--h3 c-fe--col3"> {{ site.title }} </h3>
 
-  <div class="wrapper">
+    <section class="c-fe--col2 c-fe--col12--landscape">
+      <header>
+        <h4 class="c-heading">Subscribe</h4>
+      </header>
+      <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="c-button--dark p-ft__button">
+        <span class="p-ft__button">RSS Feed</span>
+      </a>
+    </section>
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+    <section class="c-fe--col2 c-fe--col12--landscape">
+      <header>
+        <h4 class="c-heading">SNS</h4>
+      </header>
+      <ul class="c-button-group--horizontal">
+        {% if site.github_username %}
+        <li class="u-flex--column c-button--dark">
+          <a href="https://github.com/{{ site.github_username }}">
+            <span class="p-ft__button">Github</span>
+          </a>
+        </li>
+        {% endif %}
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
+        {% if site.twitter_username %}
+        <li class="u-flex--column c-button--dark">
+          <a href="https://twitter.com/{{ site.twitter_username }}">
+            <span class="p-ft__button">Twitter</span>
+          </a>
+        </li>
+        {% endif %}
+
+        {% if site.pixiv_username %}
+        <li class="u-flex--column c-button--dark">
+          <a href="http://pixiv.me/{{ site.pixiv_username }}">
+            <span class="p-ft__button">Pixiv</span>
+          </a>
+        </li>
+        {% endif %}
+      </ul>
+    </section>
+
+    <section class="c-fe--col5 c-fe--col12--landscape">
+      <header>
+        <h4 class="c-heading">About</h4>
+      </header>
+        <p class="p-ft__button">{{ site.description }}</p>
       </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
+    </section>
+  </footer>
+</div>

@@ -2,22 +2,31 @@
 layout: default
 ---
 
-<div class="home">
+<div class="p-article-list c-flex-container">
 
-  <h1 class="page-heading">Posts</h1>
+  {% for post in site.posts %}
+    <a class="p-al__item c-fe--col12--landscape c-fe--col4 c-fe--col6--tablet u-hover--grow u-transition--ease u-color--text-light" href="{{ post.url | prepend: site.baseurl }}">
+      <article class="p-ci--white u-box-shadow u-ol--white" >
+        <header class="p-ali__header c-thumbnail" {% if post.eyecatch %} style="background-image: url({{ post.eyecatch | prepend: site.baseurl }});"{% endif %}>
+          <div class="p-ali__hd__container">
+            <time class="c-date" datetime="{{ post.date }}" pubdate>
+              <span class="c-dt__year">{{ post.date | date: "%Y" }}</span>
+              <span class="c-dt__day">{{ post.date | date: "%-m/%-d" }}</span>
+            </time>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <h2 class="p-ali__heading">
+              {{ post.title }}
+            </h2>
+          </div>
+        </header>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        {% if post.copy %}
+          <div class="p-ali__container">
+            {{ post.copy | strip_newlines | truncate: 320 }}
+          </div>
+        {% endif %}
+      </article>
+    </a>
+  {% endfor %}
 
 </div>

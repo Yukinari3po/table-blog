@@ -1,0 +1,129 @@
+
+/*  Default Color
+================================================== */
+
+	/*  Based Color Large (70%) 
+	================================================== */
+
+	article > header > .series > h2 {
+		color: #0365C0;
+  }
+
+	/*  Based Color Small : light (70%) 
+	================================================== */
+
+	#site-logo,
+	#tool-information{
+		color: #5DCCFF;}
+
+
+	/*  Accent Color Large (5%) 
+	================================================== */
+
+	a.newer-post,
+    a.older-post{
+    	background-color: #FF5C2D;}
+
+	/*  Accent Color Small (5%) 
+	================================================== */
+
+	/*  Assorted Color (25%)
+	================================================== */
+
+	#article-list article{
+    	color: #eee;}
+
+
+	a.newer-post,
+    a.older-post{
+    	color: #eee;}
+
+    /*  Assorted Color Small (25%) 
+	================================================== */
+
+	article .series a:link,
+	article .series a:hover,
+	article .series a:active,
+	article .series a:visited{
+		color: #666;}
+
+	article > footer{
+		background-color: #666;
+	}
+
+	article > header > .info{
+		background-color: #ddd;}
+
+	/*  Table
+	================================================== */
+
+		/*  Based Color Large (75%) 
+		================================================== */
+
+		article table{
+			background-color: #fafafa;
+		}
+
+		/*  Based Color Small (75%) 
+		================================================== */
+
+        article table tr:nth-child(2n){
+            background-color: #f0f0f0;
+        }
+
+		/*  Assorted Color Large (25%) 
+		================================================== */
+
+		article thead{
+			background-color: #c0f6c0;
+		}
+
+
+	/*  Outlined Text
+	================================================== */
+
+	a.newer-post > p.action-label,
+    a.older-post > p.action-label{
+        text-shadow: 1px  1px 0px #333,
+			         1px -1px 0px #333,
+			        -1px  1px 0px #333,
+			        -1px -1px 0px #333,
+
+			         1px  0px 0px #333,
+			        -1px  0px 0px #333,
+			         0px  1px 0px #333,
+			         0px -1px 0px #333;}
+
+	#article-list article{
+        text-shadow: 1px  1px 0px #eee,
+			         1px -1px 0px #eee,
+			        -1px  1px 0px #eee,
+			        -1px -1px 0px #eee,
+
+			         1px  0px 0px #eee,
+			        -1px  0px 0px #eee,
+			         0px  1px 0px #eee,
+			         0px -1px 0px #eee;}
+
+	/*  SNS Icons
+	================================================== */
+    .twitter a{
+        background-image: url("../images/justvector/twitter.svg");
+        background-color: #55acee;
+    }
+    .facebook a{
+        background-image: url("../images/justvector/facebook.svg");
+        background-color: #315096;
+    }
+    .tumblr a{
+        background-image: url("../images/justvector/tumblr.svg");
+        background-color: #35465c;
+    }
+    .google-plus a{
+        background-image: url("../images/justvector/google.svg");
+        background-color: #dd4b39;
+    }
+    .hatena a{
+        background-image: url("../images/justvector/hatena.svg");
+        background-color: #008fde;
+    }

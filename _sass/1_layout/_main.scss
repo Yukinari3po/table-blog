@@ -1,0 +1,7 @@
+[id="main"] {
+  background-color: #fbfbfb;
+  background-image: url("/assets/main__background.png");
+  background-repeat: repeat-x;
+  background-position: top;
+  @include flex(1, 0, auto);
+}

@@ -1,0 +1,13 @@
+[id="footer"] {
+  background-color: #36424a;
+  @include flex(0, 0, auto);
+  font-size: 12px;
+  color: #b1b0a7; // PANTONE 414C
+  padding-top: 1em;
+  padding-bottom: 1em;
+  line-height: 1.79em;
+}
+
+.p-ft__button {
+  color: #ffffff; // PANTONE 606C
+}

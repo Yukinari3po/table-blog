@@ -1,0 +1,11 @@
+.l-header {
+  background-color: #FAF6F3; // PANTONE
+  @include flex(0, 0, auto);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  height: 48px;
+}
+
+.l-header__container {
+  height: 100%;
+}

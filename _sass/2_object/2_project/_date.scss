@@ -1,0 +1,13 @@
+.c-date {
+    @include flex-column;
+    font-family: "Georgia", serif;
+}
+
+.c-dt__year{
+    font-size: 2em;
+}
+
+.c-dt__day{
+    font-size: 2.5em;
+    line-height: 1.0em;
+}
