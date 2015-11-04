@@ -2,7 +2,7 @@
 layout: post
 title: NPCとして話す
 date:   2015-11-01
-categories: how-to-use
+categories: how-to-use session-page
 ---
 
 ![NPCとして話す](/assets/how-to-use/post-as-npcs/01.png)

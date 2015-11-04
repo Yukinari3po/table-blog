@@ -1,5 +1,5 @@
 <div class="p-article-list c-flex-container">
-  {% for post in site.posts %}
+  {% for post in include.param %}
     <div class="c-fe--col12--landscape c-fe--col6 c-fe--col6--tablet">
       {% if post.layout == post %}
         {% include post_card.html %}

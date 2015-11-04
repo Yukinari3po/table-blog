@@ -2,9 +2,11 @@
 layout: post
 title: ダイス(サイコロ)のつかいかた
 date:   2015-11-01
-categories: how-to-use
+categories: how-to-use session-page
 tags: GM Player
 ---
+
+![](/assets/how-to-use/use-dicecode/01.png)
 
 投稿したいメッセージの行末に、
 "2D6"や"1D10"などの書き方で、  
