@@ -1,27 +1,13 @@
 ---
 layout: default
 ---
-<div class="u-width--fluid l-header">
-  <div class="c-flex-container u-justify--start">
-    {% include post_nav.html %}
-  </div>
+
+<div class="c-flex-container">
+  <header>
+    <h1 class="p-ps__heading c-heading u-text-right">{{ page.title }}</h1>
+    {% if page.eyecatch %}
+      <img src="{{ page.eyecatch | prepend: site.baseurl }}" class="p-ps__eyecatch">
+    {% endif %}
+  </header>
+  {{ content }}
 </div>
-
-<article class="p-post">
-  <div class="c-flex-container u-justify--center">
-    <div class="p-ps__container">
-      <header>
-        <h1 class="p-ps__heading c-heading u-text-right">{{ page.title }}</h1>
-        {% if page.eyecatch %}
-          <img src="{{ page.eyecatch | prepend: site.baseurl }}" class="p-ps__eyecatch">
-        {% endif %}
-      </header>
-
-      {% if content %}
-        <div class="p-ps__body">
-          {{ content }}
-        </div>
-      {% endif %}
-    </div>
-  </div>
-</article>

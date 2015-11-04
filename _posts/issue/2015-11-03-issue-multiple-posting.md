@@ -1,11 +1,9 @@
 ---
-layout: issue
+layout: post
 title: チャットに同じメッセージがいくつも表示される
 categories: issue
 tags: issue
 ---
-
-### ダイスを振る
 
 投稿したいメッセージの行末に、
 "2D6"や"1D10"などの書き方で、

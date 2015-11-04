@@ -14,7 +14,7 @@
 
 .p-ali__hd__container {
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 10px;
+  padding: 15px 10px 10px 10px;
   transition: background-color 0.4s ease 0;
   -webkit-transition: background-color 0.4s ease 0;
   -moz-transition: background-color 0.4s ease 0;
@@ -29,17 +29,21 @@ $ali__heading-line-height: 1.79em;
   font-size: $ali__heading-font-size;
   line-height: $ali__heading-line-height;
   display: block;
-  height: $ali__heading-font-size * 2 + $ali__heading-line-height;
   font-weight: bold;
   font-family: serif;
 }
 
 .p-ali__container {
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
   line-height: $ali__heading-line-height;
 
   img {
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 }

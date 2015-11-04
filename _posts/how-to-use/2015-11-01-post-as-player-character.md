@@ -5,7 +5,7 @@ date:   2015-11-01
 categories: how-to-use
 ---
 
-![](/assets/how-to-use/post-as-player-character/01.png)
+![プレイヤーキャラクターとして話す](/assets/how-to-use/post-as-player-character/01.png)
 
-プレイヤーは、”「”から入力を始めると、  
+プレイヤーは、”「”から入力を始めると、
 演じているキャラクターの発言になります。
