@@ -1,5 +1,132 @@
 ---
-layout: default
+layout: merketing
+title: Tablk
 ---
 
-{% include archive.html %}
+<div class="p-mk__herounit">
+	<div class="c-flex-container u-justify--center u-alignc--center">
+		<div class="p-mk__hu__character-image c-fe--col4">
+			= image_tag "marketing/character.png"
+    </div>
+		<div class="p-mk__hu__hero-image c-fe--col8 c-fe--fluid-landscape">
+			= image_tag "marketing/hu__image.png", class: "c-fe__img"
+    </div>
+  </div>
+</div>
+
+<div class="p-mk__description">
+	<div class="c-flex-container u-justify--end">
+		<div class="p-mk__dsc__container c-fe--col8 c-fe--fluid-landscape">
+			<h1 class="u-service-name p-mk__hu__logo">
+				Tablk β
+      </h1>
+			= image_tag "marketing/description.png", class: "c-fe__img", alt:"スマホのブラウザでも楽しめる、テーブルトークRPG向けのチャットツールです。"
+			<div class="p-mk__dsc__signup-button-container">
+				= link_to "ユーザー登録する", signup_path, class: "c-button--primary c-button--large"
+				= link_to "ログイン", signin_path, class: "c-button--default c-button--border--dark c-button--large"
+			</div>
+			<!-- <div class="p_mk__dsc__links-container u-box-shadow--inset--top">
+				<ol class="u-flex--row u-justify--around">
+					<li class="p_mk__dsc__links-list-group__item">
+						|「テーブルトークRPG」って何？
+					<li class="p_mk__dsc__links-list-group__item u-link--disabled">
+						| あそびかた
+					<li class="p_mk__dsc__links-list-group__item u-link--disabled">
+						| スゴいところ
+					<li class="p_mk__dsc__links-list-group__item u-link--disabled">
+						| あそべるブラウザ一覧
+					<li class="p_mk__dsc__links-list-group__item u-link--disabled">
+						| パワーアップ計画
+					<li class="p_mk__dsc__links-list-group__item">
+						| つくった人 -->
+		</div>
+	</div>
+</div>
+
+<section class="p-mk__section p-mk__about-trpg">
+	<div class="c-flex-container">
+		<header class="p-mk__sec__header c-fe--fluid">
+			<h2 class="p-mk__sec__heading">
+				<span class="u-service-name">Tablk</span>って？
+			</h2>
+		</header>
+
+		<div class="c-fe--col5 c-fe--fluid-landscape u-justify--center u-aligni--center">
+			= image_tag "marketing/at__image01.png", class: "c-fe__img c-fe__img--small-landscape"
+		</div>
+
+		<div class="c-fe--col7 c-fe--fluid-landscape u-justify--center u-aligni--center">
+			<div>
+				<p class="c-paragraph c-text-container">
+					「テーブルトークRPG」という、
+					<br>
+					みんなでわいわいとテーブルを囲んで、
+					<br>
+					別の世界の人物になりきってお話ししながら、
+					<br>
+					すすめていくゲームがあります。
+				</p>
+				<p class="c-paragraph c-text-container">
+					<span class="u-service-name">Tablk</span>
+					(たぶるく)は、
+					<br>
+					そんなテーブルの代わりをしてくれます。
+				</p>
+				<p class="c-paragraph c-text-container">
+					もちろん、ゲームに必要なほかの道具たち、
+					<br>
+					紙や、えんぴつ、サイコロも準備して、
+					<br>
+					みなさんが席につくのをお待ちしています。
+				</p>
+				<p class="c-paragraph c-text-container">
+					あとはゲームの決まりごとが書かれた、
+					<br>
+					「ルールブック」を買って、
+					<br>
+					いっしょにあそぶ仲間を見つけるだけ。
+				</p>
+				<p class="c-paragraph c-text-container">
+					テーブルという舞台ではじまる、
+					<br>
+					あなたと、仲間と、登場人物たちの
+					<br>
+					物語をつくりあげてみませんか？
+				</p>
+
+<section class="p-mk__section p-mk__about-creator">
+	<div class="c-flex-container u-justify--center">
+		<header class="p-mk__sec__header c-fe--fluid">
+			<h2 class="p-mk__sec__heading">
+				<span class="u-service-name">Tablk</span>をつくったひと
+			</h2>
+		</header>
+
+		<div class="c-fe--col12 c-fe--fluid-landscape u-aligni--center">
+			= image_tag("icons/Yukinari3po.png", class: "p-mk__avatar")
+
+			<div class="">
+				<h3 class="c-heading--h3 u-text-center">
+					Yukinari3po
+				</h3>
+
+				<p>
+					プログラムや、イラスト、デザインなど、<br>
+					ほとんどまるっとぜんぶ作っています。
+				</p>
+				<ul class="c-nav--inline">
+					<li class="c-nav__item--round" role="presentation">
+						<a href="http://yukinari3po.com">
+							<span class="social-icon wordpress fa fa-wordpress"></span>
+						</a>
+					</li>
+					<li class="c-nav__item--round" role="presentation">
+						<a href="http://www.pixiv.net/member.php?id=66841">
+							<span class="social-icon pixiv fa fa-pixiv"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
