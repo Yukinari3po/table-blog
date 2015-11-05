@@ -1,0 +1,95 @@
+
+.p-mk__herounit {
+    background-color: #FFFFFF;
+    background-image: url("/assets/marketing/hu__background.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.p-mk__hu__logo {
+    font-size: 4.0em;
+    line-height: 1.79em;
+    text-align: center;
+    color: #003045; // PANTONE 303 C
+}
+
+.p-mk__hu__character-image {
+    position: relative;
+
+    > img {
+        width: 130%;
+        height: auto;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    @media (max-width: 767px) {
+        & {
+            display: none !important;
+        }
+    }
+}
+
+.p-mk__description {
+    background-color: #F9F5F2;
+}
+
+.p-mk__dsc__signup-button-container {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.p-mk__hu__hero-image {
+    margin-top: 2em;
+}
+
+.p-mk__dsc__container {
+    color: #003045; // PANTONE 303 C
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.p_mk__dsc__links-container {
+    margin-top: 2em;
+}
+
+.p_mk__dsc__links-list-group {
+}
+
+.p_mk__dsc__links-list-group__item {
+    margin: 0.3em 1em;
+    color: #0085cf; // PANTONE Process Blue C
+    font-weight: bold;
+}
+
+.p-mk__sec__header {
+    margin-bottom: 2em;
+}
+
+.p-mk__sec__heading {
+    letter-spacing: 0.2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.p-mk__avatar {
+    width: 60px;
+    height: auto;
+}
+
+.p-mk__section {
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+
+.p-mk__about-trpg {
+    background-color: #5bb4e5; // PANTONE 2915 C
+    color: #ffffff;
+}
+
+.p-mk__about-creator {
+    background-color: #333; // PANTONE 2915 C
+    color: #ffffff;
+}
