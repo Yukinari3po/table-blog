@@ -6,6 +6,7 @@ description: >
   テーブルトークRPG向けのチャットツールです。
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://tablk.net" # the base hostname & protocol for your site
+serviceurl: "https://tablk.herokuapp.com"
 twitter_username: Tablk_Official
 
 # Build settings

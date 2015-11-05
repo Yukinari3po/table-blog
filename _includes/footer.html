@@ -2,7 +2,25 @@
   <footer class="c-flex-container">
     <section class="c-fe--col2 c-fe--col12--landscape">
       <header>
-        <h4 class="c-heading">Links</h4>
+        <h4 class="c-heading">つかう</h4>
+      </header>
+      <ul class="c-button-group--horizontal">
+        <li class="u-flex--column c-button--dark">
+          <a href="{{ site.serviceurl }}/signin/">
+            <span class="p-ft__button">ログイン</span>
+          </a>
+        </li>
+        <li class="u-flex--column c-button--dark">
+          <a href="{{ site.serviceurl }}/signup/">
+            <span class="p-ft__button">ユーザー登録</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="c-fe--col2 c-fe--col12--landscape">
+      <header>
+        <h4 class="c-heading">しらべる</h4>
       </header>
       <ul class="c-button-group--horizontal">
         <li class="u-flex--column c-button--dark">
@@ -23,6 +41,16 @@
         <li class="u-flex--column c-button--dark">
           <a href="/faq/">
             <span class="p-ft__button">更新情報</span>
+          </a>
+        </li>
+        <li class="u-flex--column c-button--dark">
+          <a href="/term_of_use/">
+            <span class="p-ft__button">利用規約</span>
+          </a>
+        </li>
+        <li class="u-flex--column c-button--dark">
+          <a href="/privacy_policy/">
+            <span class="p-ft__button">プライバシーポリシー</span>
           </a>
         </li>
       </ul>
@@ -52,7 +80,7 @@
         </li>
         <li class="u-flex--column c-button--dark">
           <a href="/blog/">
-            <span class="p-ft__button">開発者Blog</span>
+            <span class="p-ft__button">開発室Blog</span>
           </a>
         </li>
         {% endif %}
