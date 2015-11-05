@@ -46,7 +46,6 @@
 .p-mk__dsc__container {
     color: #003045; // PANTONE 303 C
     margin-top: 2em;
-    margin-bottom: 4em;
 }
 
 .p_mk__dsc__links-container {
@@ -63,7 +62,7 @@
 }
 
 .p-mk__sec__header {
-    margin-bottom: 2em;
+    
 }
 
 .p-mk__sec__heading {
@@ -72,6 +71,7 @@
     font-weight: bold;
     text-align: center;
     width: 100%;
+    line-height: 1em;
 }
 
 .p-mk__avatar {
@@ -79,17 +79,41 @@
     height: auto;
 }
 
-.p-mk__section {
-    padding-top: 3em;
-    padding-bottom: 4em;
-}
+// .p-mk__section {
+//     padding-top: 3em;
+//     padding-bottom: 4em;
+// }
 
 .p-mk__about-trpg {
-    background-color: #5bb4e5; // PANTONE 2915 C
+    background-color: #6e99d4; // PANTONE 659 C
     color: #ffffff;
+}
+
+.h-skewed-separator {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    content: '';
+    height: 4.5em;
+    width: 100%;
+
+    @media (max-width: 767px) {
+        & {
+            height: 2.5em;
+        }
+    }
+}
+.p-mk__about-trpg__separator {
+    @extend .h-skewed-separator;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%236e99d4;' /%3E %3Cline fill='none' stroke='#000000' stroke-width='1.414' stroke-miterlimit='10' stroke-opacity='0.1' x1='0.5' y1='100.5' x2='101.5' y2='-0.5'/%3E
+    %3Cline fill='none' stroke='#000000' stroke-width='0.707' stroke-miterlimit='10' stroke-opacity='0.1' x1='0' y1='100.5' x2='101' y2='-0.5'/%3E %3C/svg%3E");
 }
 
 .p-mk__about-creator {
-    background-color: #333; // PANTONE 2915 C
+    background-color: #36424a; // PANTONE 5275 C
     color: #ffffff;
+}
+.p-mk__about-twitter__separator {
+    @extend .h-skewed-separator;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2336424a;' /%3E %3Cline fill='none' stroke='#000000' stroke-width='1.414' stroke-miterlimit='10' stroke-opacity='0.1' x1='0.5' y1='100.5' x2='101.5' y2='-0.5'/%3E
+    %3Cline fill='none' stroke='#000000' stroke-width='0.707' stroke-miterlimit='10' stroke-opacity='0.1' x1='0' y1='100.5' x2='101' y2='-0.5'/%3E %3C/svg%3E");
 }
