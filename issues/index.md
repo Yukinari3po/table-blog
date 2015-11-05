@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: list
 title: わかっている不具合・バグ
 ---
 

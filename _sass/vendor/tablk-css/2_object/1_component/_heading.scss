@@ -2,6 +2,10 @@
   line-height: 1.5em;
 }
 
+.c-heading__small {
+  font-size: 80%;
+}
+
 .c-heading--h3 {
   font-size: 1.2em;
   @extend .c-heading;

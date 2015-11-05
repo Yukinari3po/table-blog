@@ -1,9 +1,9 @@
 # Site settings
-title: Tablk
+title: Tablk note
 email:
 description: >
-  ユーザー登録するだけで、PCでも、スマホのブラウザでも楽しめる。<br>
-  テーブルトークRPG向けのチャットツールです。
+  テーブルトークRPGがあそべるWebアプリ、<br>
+  <span class="u-service-name">Tablk</span>についてのノートです。
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://tablk.net" # the base hostname & protocol for your site
 serviceurl: "https://tablk.herokuapp.com"

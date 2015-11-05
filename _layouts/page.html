@@ -1,13 +1,14 @@
 ---
-layout: default
+layout: base
 ---
 
-<div class="c-flex-container u-flex--column--nowrap">
-  <header>
-    <h1 class="p-ps__heading c-heading u-text-right">{{ page.title }}</h1>
-    {% if page.eyecatch %}
-      <img src="{{ page.eyecatch | prepend: site.baseurl }}" class="p-ps__eyecatch">
-    {% endif %}
-  </header>
-  {{ content }}
-</div>
+<article class="c-flex-container u-flex--row--nowrap u-justify--center">
+  <div class="c-fe--col10 c-fe--fluid--tablet">
+    <header>
+      <h1 class="p-ps__heading c-heading">{{ page.title }}</h1>
+    </header>
+    <div class="p-docs">
+      {{ content }}
+    </div>
+  </div>
+</article>
