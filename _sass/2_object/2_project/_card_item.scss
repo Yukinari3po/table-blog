@@ -1,6 +1,12 @@
 .p-card-item {
   border-radius: 4px;
   overflow: hidden;
+
+  overflow: hidden;
+  font-size: 12px;
+  padding: 5px;
+  box-sizing: border-box;
+  color: #3e4545; // PANTONE 446C
 }
 
 .p-ci--white {

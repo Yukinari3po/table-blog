@@ -1,15 +1,17 @@
-<article class="p-al__item p-tips p-ci--white" >
-  <a class="u-color--text-light"></a>
-  <header class="p-ali__header c-thumbnail" {% if post.eyecatch %} style="background-image: url({{ post.eyecatch | prepend: site.baseurl }});"{% endif %}>
-    <div class="p-ali__hd__container">
+<div class="c-fe--col12--landscape c-fe--col6 c-fe--col6--tablet">
+  <article class="p-al__item p-card-item p-ci--white" >
+    <a class="u-color--text-light"></a>
+    <header class="p-ali__header c-thumbnail" {% if post.eyecatch %} style="background-image: url({{ post.eyecatch | prepend: site.baseurl }});"{% endif %}>
+      <div class="p-ali__hd__container">
 
-      <h2 class="p-ali__heading">
-        {{ post.title }}
-      </h2>
+        <h2 class="p-ali__heading">
+          {{ post.title }}
+        </h2>
+      </div>
+    </header>
+
+    <div class="p-ali__container p-docs">
+      {{ post.content | strip_newlines }}
     </div>
-  </header>
-
-  <div class="p-ali__container p-docs">
-    {{ post.content | strip_newlines }}
-  </div>
-</article>
+  </article>
+</div>
