@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: tips
 title: すこし前のAndroidで表示が崩れる
 categories: issue faq
 tags: android

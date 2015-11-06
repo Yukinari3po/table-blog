@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: tips
 title: プレイヤーキャラクターとして話す
 date:   2015-11-01
 categories: how-to-use session-page

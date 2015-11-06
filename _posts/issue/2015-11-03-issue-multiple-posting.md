@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: tips
 title: チャットに同じメッセージがいくつも表示される
 categories: issue faq
 ---

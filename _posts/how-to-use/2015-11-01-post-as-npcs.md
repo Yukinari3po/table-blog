@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: tips
 title: NPCとして話す
 date:   2015-11-01
 categories: how-to-use session-page
