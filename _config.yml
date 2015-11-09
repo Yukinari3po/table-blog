@@ -14,3 +14,6 @@ markdown: kramdown
 
 gems:
   - jekyll-sitemap
+
+# Outputting
+permalink:     none
