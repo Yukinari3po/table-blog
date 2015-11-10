@@ -16,4 +16,4 @@ gems:
   - jekyll-sitemap
 
 # Outputting
-permalink:     none
+permalink:  /archives/:short_year:month:day-:title

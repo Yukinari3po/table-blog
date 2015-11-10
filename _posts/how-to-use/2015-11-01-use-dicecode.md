@@ -1,7 +1,6 @@
 ---
 layout: tips
 title: ダイス(サイコロ)のつかいかた
-date:   2015-11-01
 categories: how-to-use session-page
 tags: GM Player
 ---

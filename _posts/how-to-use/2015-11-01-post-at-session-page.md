@@ -1,7 +1,6 @@
 ---
 layout: tips
 title: チャットで話す
-date:   2015-11-01
 categories: how-to-use session-page
 tags: player
 ---
