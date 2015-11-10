@@ -23,6 +23,10 @@ ol,ul {
   margin: 0;
 }
 
+a:link, a:active, a:hover, a:visited {
+	color: #0085cf; // PANTONE Process Blue C
+}
+
 input, select, textarea {
   font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
