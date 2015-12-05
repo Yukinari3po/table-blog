@@ -4,7 +4,7 @@ title: 開発スタッフblogをはじめます！
 categories: blog
 ---
 
-これまでTablkでは、["公式Twitterアカウント"]("https://twitter.com/{{ site.twitter_username }}")で、  
+これまでTablkでは、["公式Twitterアカウント"](https://twitter.com/{{ site.twitter_username }})で、  
 アップデートや不具合の情報などをお伝えしてきました。  
 しかし、昔の発言が流されやすいTwitterだけでなく、  
 きちんと書きとめられて、読みやすい公式サイトとして、     
