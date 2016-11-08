@@ -43,13 +43,10 @@
 
     pre {
         background-color: rgba(0, 0, 0, 0.2);
-        overflow-x: scroll;
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: touch;
-
         border-radius: 3px;
         margin-top: 1em;
-
+        white-space: pre-wrap;
+        padding: 1em;
     }
 
     table {
